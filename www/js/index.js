@@ -1,14 +1,13 @@
-imageSlideshow(0,"grain-app-","a","si",4000);
-function imageSlideshow(i,imgName,imgClass,containerClass,delay) {
+imageSlideshow(0, "./img/grain-app-", "a", "si", 4000);
+function imageSlideshow(i, imgUrl, imgClass, containerClass, delay) {
     var imgs = document.getElementsByClassName(containerClass);
-    for (var j = 0; j < imgs.length; j++) {
+    var imgCount = imgs.length;
+    for (var j = 0; j < imgCount; j++) {
         imgs[j].style.opacity = "0";
-        imgs[j].style.display = "block";
     }
+    if (i < (imgCount - 1)) { imgs[i+1].style.backgroundImage = 'url("' + imgUrl + (i + 1) + '.png")'; }
     i++;
-    if (i > imgs.length) {i = 1;} 
-    else{document.getElementsByClassName(imgClass + (i-1))[0].style.backgroundImage = 'url("../www/img/' + imgName + (i-1) + '.png")';}
+    if (i > imgCount) { i = 1; }
     imgs[i-1].style.opacity = "1";
-    imgs[i-1].style.display = "block";
-    setTimeout(imageSlideshow,delay,i,imgName,imgClass,containerClass,delay);
+    setTimeout(imageSlideshow, delay, i, imgUrl, imgClass, containerClass, delay);
 };
