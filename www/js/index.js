@@ -1,16 +1,14 @@
-var ssi = 0;
-var t = 4000;
-ss();
-function ss() {
-    var imgs = document.getElementsByClassName("si");
-    for (var i = 0; i < imgs.length; i++) {
-        imgs[i].style.opacity = "0";
-        imgs[i].style.display = "block";
+imageSlideshow(0,"grain-app-","a","si",4000);
+function imageSlideshow(i,imgName,imgClass,containerClass,delay) {
+    var imgs = document.getElementsByClassName(containerClass);
+    for (var j = 0; j < imgs.length; j++) {
+        imgs[j].style.opacity = "0";
+        imgs[j].style.display = "block";
     }
-    ssi++;
-    if (ssi > imgs.length) {ssi = 1;} 
-    else if (ssi < imgs.length) {document.getElementsByClassName("a" + (ssi+1))[0].style.backgroundImage = 'url("../www/img/grain-app-' + (ssi+1) + '.png")';}
-    imgs[ssi-1].style.opacity = "1";
-    imgs[ssi-1].style.display = "block";
-    setTimeout(ss, t);
+    i++;
+    if (i > imgs.length) {i = 1;} 
+    else{document.getElementsByClassName(imgClass + (i-1))[0].style.backgroundImage = 'url("../www/img/' + imgName + (i-1) + '.png")';}
+    imgs[i-1].style.opacity = "1";
+    imgs[i-1].style.display = "block";
+    setTimeout(imageSlideshow,delay,i,imgName,imgClass,containerClass,delay);
 };
