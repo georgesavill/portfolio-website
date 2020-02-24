@@ -40,6 +40,9 @@ a{
         margin-bottom:20px!important;
     }
 }
+.section{
+    margin-bottom:60px;
+}
 .slideshow-container{
     margin:auto;
     max-width:375px;
@@ -57,7 +60,7 @@ a{
     flex: 1;
     margin:auto 30px;
 }
-.section-content h2{
+.section h2, .section h3{
     margin:0;
     text-align:left;
 }
