@@ -30,19 +30,25 @@ a{
 }
 
 /* Slideshow and text sections */
-@media screen and (min-width: 1024px){
+@media screen and (min-width: 900px){
     .section {
         display: flex;
-    }    
+    }
+}
+@media screen and (max-width: 900px){
+    .slideshow-container{
+        margin-bottom:20px!important;
+    }
 }
 .slideshow-container{
-    margin:0 auto;
-    max-width:200px;
+    margin:auto;
+    max-width:375px;
     flex: 0 1 42%;
     height:160vw;
     max-height:375px;
     background-size:contain;
     background-repeat:no-repeat;
+    background-position: center;
     transition: background-image 1s ease-in-out;
     transition-delay:3s;
 }
