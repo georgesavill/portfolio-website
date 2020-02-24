@@ -2,6 +2,8 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
+    font-family:"Quicksand";
+    color:#fff;
 }
 
 body{
@@ -9,11 +11,6 @@ body{
     padding:10px;
     max-width:1366px;
     margin:0 auto;
-}
-
-.txt, h1, h2, h3, a, .links {
-    font-family:sans-serif;
-    color:#fff;
 }
 
 h1, h2, h3, .links{
