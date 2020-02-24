@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-
+	
 	<meta charset="utf-8">
 
 	<title>George Savill | Software Developer</title>
@@ -23,8 +23,7 @@
 	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
 
-	<link rel="stylesheet" href="css/styles.css">
-
+	<link rel="stylesheet" href="css/styles.min.css">
 </head>
 
 <body>
@@ -35,8 +34,26 @@
 	<div class="links">
 		<a href="https://github.com/georgesavill">GitHub</a>
 		<a href="https://www.linkedin.com/in/georgesavill/">LinkedIn</a>
-		<a href="https://www.researchgate.net/profile/George_Savill">ResearchGate</a>
+        <a href="https://www.researchgate.net/profile/George_Savill">ResearchGate</a>
 	</div>
-</body>
+	<br>
 
+	<div class="section">
+
+		<div class="grain-app-slideshow slideshow-container"></div>	
+
+		<div class="section-content txt">
+			<h2>Grain size analysis Android application</h2>
+			<br>
+			<p>During my PhD I undertook a three month placement with <a href="http://petioleapp.com/" target="_blank">petiole ltd</a>, working from home to develop an Android application that would allow plant science researchers to analyse a sample of grain or seed using their smartphone.</p>
+			<br>
+			<p>The application was prototyped in C++ before being made into an Android application written in Java. It uses the <a href="https://opencv.org/" target="_blank">OpenCV computer vision library</a> to calibrate the phone's camera, and to count and measure a sample of grain. In addition to an overall count, measurements for the area, length, and width of each individual grain are calculated. Any broken or touching grains are identified and removed from the results, which can then be viewed on screen, or exported as a CSV file for further analysis.</p>
+		</div>
+
+	</div>
+	
+
+
+</body>
+<script src="./js/index.min.js" type="text/javascript"></script>
 </html>
