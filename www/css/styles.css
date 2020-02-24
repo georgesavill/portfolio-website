@@ -49,7 +49,7 @@ a{
 .section-content{
     text-align:left;
     flex: 1;
-    margin:30px;
+    margin:auto 30px;
 }
 .section-content h2{
     margin:0;
