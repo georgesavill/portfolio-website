@@ -24,6 +24,11 @@ h1, h2, h3, .links{
     margin:30px;
 }
 
+a{
+    text-decoration: none;
+    color: #aaa;
+}
+
 /* Slideshow and text sections */
 @media screen and (min-width: 1024px){
     .section {
