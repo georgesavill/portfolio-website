@@ -19,7 +19,7 @@ body{
     margin:0 auto;
 }
 
-h1, h2, h3, .links{
+h1, h2, h3, h4, .links{
     text-align:center;
     margin:30px;
 }
@@ -45,6 +45,9 @@ a{
         margin-bottom:20px!important;
     }
 }
+.header{
+    margin:100px;
+}
 .section{
     margin-bottom:60px;
 }
@@ -65,7 +68,7 @@ a{
     flex: 1;
     margin:auto 30px;
 }
-.section h2, .section h3{
+.section h2, .section h3, .subtitle{
     margin:0;
     text-align:left;
 }
