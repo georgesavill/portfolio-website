@@ -1,3 +1,4 @@
+imageSlideshow(0,"./img/ai-",6,"artificial-intelligence-slideshow",5000);
 imageSlideshow(0,"./img/grain-app-",6,"grain-app-slideshow",5000);
 imageSlideshow(0,"./img/db-",4,"db-slideshow",5000);
 function imageSlideshow(i,imgUrl,imgCount,containerClass,delay){
